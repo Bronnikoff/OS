@@ -6,13 +6,14 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+//Бронников Максим, вариант №6
 
 void ave();
 char** readcom(short int* size);
 
 char** readcom(short int* size){
   char c, buffer[15]; //временное хранилище аргумента
-  char** str=NULL;//обнуядяем для ссылки в реаллоке если память выделяется 1 раз
+  char** str=NULL;
   ave();
   *size = 0;
   while(scanf("%s%c", buffer, &c)){//гениальное введение 'с' для остановки цикла
@@ -29,7 +30,7 @@ char** readcom(short int* size){
 void ave(){
   printf("$ ");//обычное приглашение к вводу, можно было не делать отдельной
   return;//функции, но она была создана изначально с большим потенциалом
-}//с целью создания более умного приглашения в данной функции
+}//с целью создания более умного приглашения
 
 int main(){
   printf("Welcome to OSlab1\nExersise №6:\n");
@@ -73,6 +74,6 @@ int main(){
     free(str);//освобождаем память массива ячеек для предотвращения утечек
     str=NULL;
   }
-  printf("Made by Duysekeev Alisher (№4) M80-204b-17\n"); //напиши свое имя и фамилию!!!
+  printf("Made by Bronnikov Maksim (№1) M80-204b-17\n");
   return 0;
 }

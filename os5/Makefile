@@ -1,10 +1,15 @@
-all: client server
+binary: prog2.o libworld.so
+	gcc -o binary prog2.o -L. -lworld -Wl,-rpath,.
+	rm -f *.o
 
-client:
-	gcc -std=c99 -pthread -Wall client.c -o client -L/usr/local/lib -lzmq
+prog2.o: prog2.c
+	gcc -c prog2.c
 
-server:
-	gcc -std=c99 -pthread -Wall bank.c server.c -o server -L/usr/local/lib -lzmq
+libworld.so: Massive.o
+	gcc -shared -o libworld.so Massive.o
+
+Massive.o: Massive.c
+	gcc -c -fPIC Massive.c
 
 clean:
-	rm -f *.o client server
+	rm -f *.o *.so *.out binary

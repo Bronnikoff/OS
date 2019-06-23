@@ -12,6 +12,8 @@
 #include <sys/file.h>
 #include <errno.h>
 
+// Бронников Максим, вариант №3
+
 void recursion(int* hustle){
   int status, p = *hustle;
   if (p<1){

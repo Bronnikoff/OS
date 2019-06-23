@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Бронников Максим
+// Использование библиотеки во время исполнения программы при помощи подгрузки
+
 #define EXPEREMENTAL_SIZE 10
 
 int main(int argc, char const *argv[]) {

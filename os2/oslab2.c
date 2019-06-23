@@ -6,6 +6,8 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+//Бронников Максим, вариант №3
+
 void elitreader(int* n);
 void elitwriter(int* n);
 

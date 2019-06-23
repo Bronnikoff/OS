@@ -12,6 +12,8 @@
 #include "bank.h"
 #include "message.h"
 
+//Бронников Максим  Вариант: 1, 3, 2
+
 volatile sig_atomic_t flag = 0;
 
 void block_func(int sig)

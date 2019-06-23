@@ -6,6 +6,7 @@
 
 #include <zmq.h>
 #include "message.h"
+//Бронников Максим, вариант №1, 3, 2
 
 void menuUser()
 {

@@ -1,6 +1,9 @@
 #include "Massive.h"
 #define EXPEREMENTAL_SIZE 10
 
+//Бронников Максим
+//Использование библиотеки, запущенной на этапе линковки
+
 int main(int argc, char const *argv[]) {
   Massive mass;
   create_massive(&mass, EXPEREMENTAL_SIZE);
